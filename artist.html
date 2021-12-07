@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/artist.css">
+</head>
+
+<body>
+    <!--Main navigation bar-->
+    <header id="topbar">
+        <!--App logo-->
+        <img src="assets/img/applogo.png" class="applogo" alt="Logo">
+        <img src="assets/img/applogo-small.png" class="applogo-small" alt="Logo">
+        <!--Navigation links-->
+        <nav><a href="#">Favourites</a></nav>
+        <!--Search box-->
+        <div id="search"><i class="fas fa-search"></i><input type="search" placeholder="Search"></div>
+        <!--Additional buttons-->
+        <span><i class="fas fa-bell"></i></span>
+        <div class="circular-image"><img src="assets/img/avatar.jpg" alt="Profile picture"></div>
+    </header>
+    <!--Main content container-->
+    <div id="content-wrapper">
+        <main class="main-content">
+            <div class="artist-container flex">
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="assets/img/artists/coldplay.png" alt="" class="artist-image">
+                </div>
+                <div class="info-container flex">
+                    <div class="info">
+                        <h1>Coldplay <span class="follower-count subtitle">
+                                5,000 Followers
+                            </span>
+                        </h1>
+                        <h2 class="subtitle">
+                            British Band
+                        </h2>
+
+                        <div class="description">
+                            Coldplay is a British music band that has enjoyed continuous success since their inception
+                            in
+                            1996
+                            through their intelligent and soulful songs.
+                            The band members are Chris Martin (lead vocals), Jonny Buckland (lead guitar), Guy Berryman
+                            (bass
+                            guitar) and Will Champion (drums).
+                        </div>
+                        <div class="buttons">
+                            <span class="button highlighted">Play All</span>
+                            <span class="button">Follow</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--Main track list-->
+            <div class="tracklist">
+                <div class="entry"><span class="track-number">01</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">02</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">03</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">04</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">05</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">06</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">07</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">08</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">09</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">10</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">11</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">12</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">13</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">14</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">15</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icons"><i class="fas fa-plus"></i><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+        </main>
+        <!--Sidebar for recently played songs/similar artists-->
+        <aside class="sidebar">
+            <div class="header flex">
+                <h1>Similar Artists</h1>
+                <div class="right">
+                    <span class="view-all">View All</span>
+                </div>
+            </div>
+            <div class="artist-list">
+                <div class="entry">
+                    <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                    <div class="info">Porter Robinson
+                        <div class="subtitle">Electronic</div>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="duration">4:44</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="assets/img/album-art/comedown-machine.jpg" alt="" class="thumbnail">
+                    <div class="info">The Strokes
+                        <div class="subtitle">Rock</div>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="duration">4:44</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                    <div class="info">Nurture
+                        <div class="subtitle date">Jan 1, 2021</div>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="duration">4:44</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header flex">
+                <h1>Recently Played</h1>
+                <div class="right">
+                    <span class="view-all">View All</span>
+                </div>
+            </div>
+            <!--Playback queue-->
+            <div class="queue">
+                <div class="entry"><span class="track-number">01</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">02</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">03</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">04</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">05</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">06</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">07</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">08</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">09</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">10</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">11</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">12</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">13</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">14</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">15</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--Bottom navigation bar-->
+    <footer id="bottombar">
+        <!--Currently playing song-->
+        <div id="now-playing">
+            <img src="assets/img/album-art/comedown-machine.jpg" class="thumbnail" alt="">
+            <div class="info">
+                Welcome to Japan
+                <div class="subtitle">The Strokes</div>
+            </div>
+            <div class="song-actions">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban"></i>
+            </div>
+        </div>
+        <!--Playback controls-->
+        <div id="controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i id="play-pause" class="far fa-pause-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+            <div class="seekbar-container">
+                <span class="subtitle">0:55</span>
+                <input type="range" value="25" id="playback-bar">
+                <span class="subtitle">4:44</span>
+            </div>
+        </div>
+        <div id="additional-controls">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" value="75">
+            <i class="fas fa-expand-alt" id="icon-fullscreen"></i>
+        </div>
+    </footer>
+
+</body>
+
+</html>

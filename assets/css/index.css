@@ -1,0 +1,213 @@
+/** This file contains styles specific to the home page **/
+
+.carousel {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+/** Animate the carousel **/
+.carousel:hover > img {
+    transform: scale(.9);
+    opacity: 80%;
+    z-index: 1;
+}
+
+.carousel > img {
+    position: relative;
+    flex-basis: 32%;
+    height: auto;
+    max-width: 500px;
+    min-width: 120px;
+    transition: transform 0.25s ease;
+}
+
+.carousel > img:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+    z-index: 999;
+}
+
+
+section h2 {
+    margin: 0px 0px 10px;
+}
+
+.album-grid {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album-grid > .entry {
+    flex-basis: 45%;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    /* min-width: 250px; */
+}
+
+.album-grid > .entry > .thumbnail {
+    border-radius: 4px;
+    width: 10vw;
+    height: auto;
+    max-width: 100px;
+    min-width: 75px;
+    margin-right: 1.3rem;
+}
+
+.album-grid > .entry > .info {
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    line-height: 1.5rem;
+}
+
+.album-grid > .entry > .right {
+    margin-left: auto;
+    text-align: right;
+    align-self: baseline;
+}
+
+.artist-list {
+    justify-content: space-between;
+    align-content: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.artist-list > .entry {
+    flex-basis: 16.6%;
+}
+
+.artist-list > .entry > .circular-image {
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 300px;
+    max-height: 300px;
+    width: 6vw;
+    height: 6vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artist-list > .entry .thumbnail {
+    width: 100%;
+}
+
+.radio-stations {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--secondary-background);
+}
+
+.radio-stations > .entry {
+    display: flex;
+    justify-items: center;
+    position: relative;
+    min-width: 60px;
+    flex-basis: 12%;
+}
+
+.radio-stations .thumbnail {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.radio-stations .overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: #00000046;
+    width: 100%;
+    height: 100%;
+}
+
+.radio-stations > .entry > .title {
+    position: absolute;
+    align-self: center;
+    z-index: 3;
+}
+
+#stations-image {
+    width: 15%;
+    height: auto;
+    max-width: 150px;
+}
+
+.genres {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genres > .entry {
+    font-size: 1.5rem;
+    height: 15vh;
+    display: flex;
+    flex-basis: 31%;
+    max-width: 300px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.genres > .entry > .title {
+    position: relative;
+    z-index: 3;
+}
+
+.genres > .entry > .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: transform 0.25s ease;
+}
+
+.genres > .entry > .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000067;
+    z-index: 2;
+}
+
+.genres > .entry:hover > .bg {
+    transform: scale(1.25);
+}
+
+.genres > .entry > .bg.bg-1 {
+    background-image: url("/assets/img/genres/party.webp");
+    background-size: cover;
+}
+
+.genres > .entry > .bg.bg-2 {
+    background-image: url("/assets/img/genres/electronic.jpg");
+    background-size: cover;
+}
+
+.genres > .entry > .bg.bg-3 {
+    background-image: url("/assets/img/genres/road-trip.jpg");
+    background-size: cover;
+}
+
+.album-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.album-list .entry {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 15%;
+    min-width: 80px;
+}
+
+.album-list .entry > .thumbnail {
+    border-radius: 4px;
+    width: 100%;
+}

@@ -1,0 +1,178 @@
+/** This file contains styles specific to the artist page **/
+
+/** Override the default queue margin **/
+
+.queue {
+    margin-top: 0px;
+}
+.artist-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40vh;
+    min-height: 200px;
+    flex-wrap: wrap;
+    background-color: var(--secondary-background);
+}
+
+.artist-container .info-container {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 57%;
+}
+
+.artist-container .follower-count {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: right;
+    margin-left: auto;
+    float: right;
+}
+
+.artist-container .follower-count::after {
+    clear: both;
+}
+
+.artist-container > .image-container {
+    position: relative;
+    flex-basis: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.artist-container > .image-container > .overlay {
+    position: absolute;
+    background-image: radial-gradient(#00000000, var(--secondary-background));
+    width: 100%;
+    height: 100%;
+}
+
+.artist-container > .image-container > img {
+    overflow: hidden;
+}
+
+.artist-container .buttons {
+    margin-top: 20px;
+}
+
+.artist-container .button {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 35px;
+}
+
+
+.artist-container .button.highlighted {
+    background: linear-gradient(55deg, #3224AE, #C94AE2)
+}
+
+.artist-list {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist-list > .entry {
+    flex-basis: 45%;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    /* min-width: 250px; */
+}
+
+.artist-list > .entry > .thumbnail {
+    border-radius: 4px;
+    width: 10vw;
+    height: auto;
+    max-width: 100px;
+    min-width: 75px;
+    margin-right: 1.3rem;
+}
+
+.artist-list > .entry > .info {
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    line-height: 1.5rem;
+}
+
+.artist-list > .entry > .right {
+    margin-left: auto;
+    text-align: right;
+    align-self: baseline;
+}
+
+.tracklist {
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.tracklist > .entry {
+    background-color: #1A1E33;
+    padding: 10px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.tracklist > .entry > .thumbnail {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 3px;
+}
+
+.tracklist > .entry > .info {
+    flex-grow: 1;
+}
+
+.tracklist > .entry > .track-number {
+    align-self: center;
+}
+
+.tracklist > .entry > .icons {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: #afafaf;
+    letter-spacing: 0.3rem;
+}
+
+.tracklist > .entry > .icons > i:hover {
+    color: #ffffff;
+}
+
+.artist-list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist-list > .entry {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    /* min-width: 250px; */
+}
+
+.artist-list > .entry > .thumbnail {
+    border-radius: 4px;
+    width: 10vw;
+    height: auto;
+    max-width: 100px;
+    min-width: 75px;
+    margin-right: 1.3rem;
+}
+
+.artist-list > .entry > .info {
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    line-height: 1.5rem;
+}
+
+.artist-list > .entry > .right {
+    margin-left: auto;
+    text-align: right;
+    align-self: baseline;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!--Main navigation bar-->
+    <header id="topbar">
+        <!--App logo-->
+        <img src="assets/img/applogo.png" class="applogo" alt="Logo">
+        <img src="assets/img/applogo-small.png" class="applogo-small" alt="Logo">
+        <!--Navigation links-->
+        <nav><a href="#">Favourites</a></nav>
+        <!--Search box-->
+        <div id="search"><i class="fas fa-search"></i><input type="search" placeholder="Search"></div>
+        <!--Additional buttons-->
+        <span><i class="fas fa-bell"></i></span>
+        <div class="circular-image"><img src="assets/img/avatar.jpg" alt="Profile picture"></div>
+    </header>
+    <!--Main content container-->
+    <div id="content-wrapper">
+        <main class="main-content">
+            <div class="carousel flex">
+                <img src="assets/img/playlists/80s-smash-hits.jpg" alt="" id="image-1">
+                <img src="assets/img/playlists/mood-boosters.jpg" alt="" id="image-2">
+                <img src="assets/img/playlists/edm.jpg" alt="" id="image-3">
+            </div>
+            <div class="browse">
+                <section>
+                    <h2>Latest Releases</h2>
+                    <div class="album-grid flex">
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">Nurture
+                                <div class="subtitle date">Jan 1, 2021</div>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="duration">4:44</div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">Nurture
+                                <div class="subtitle date">Jan 1, 2021</div>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="duration">4:44</div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">Nurture
+                                <div class="subtitle date">Jan 1, 2021</div>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="duration">4:44</div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">Nurture
+                                <div class="subtitle date">Jan 1, 2021</div>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="duration">4:44</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Popular Artists</h2>
+                    <div class="artist-list flex">
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/coldplay.png" alt=""
+                                    class="thumbnail">
+                            </div>
+
+                            <div>Coldplay</div>
+                        </div>
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/madeon.jpg" alt=""
+                                    class="thumbnail">
+                            </div>
+                            <div>Madeon</div>
+                        </div>
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/daft-punk.jpg" alt=""
+                                    class="thumbnail">
+                            </div>
+                            <div>Daft Punk</div>
+                        </div>
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/phoenix.jpg" alt=""
+                                    class="thumbnail">
+                            </div>
+                            <div>Phoenix</div>
+                        </div>
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/tame-impala.jpg" alt=""
+                                    class="thumbnail">
+                            </div>
+                            <div>Tame Impala</div>
+                        </div>
+                        <div class="entry">
+                            <div class="circular-image"><img src="assets/img/artists/imagine-dragons.webp" alt=""
+                                    class="thumbnail">
+                            </div>
+                            <div>Imagine Dragons</div>
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="radio-stations flex">
+                        <img src="assets/img/stations.png" alt="" id="stations-image">
+                        <div class="entry circular-image">
+                            <span class="title">Love</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/love.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="entry circular-image">
+                            <span class="title">Retro</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/retro.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="entry circular-image">
+                            <span class="title">Chill</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/chill.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="entry circular-image">
+                            <span class="title">Workout</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/workout.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="entry circular-image">
+                            <span class="title">Rock</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/rock.jpg" alt="" class="thumbnail">
+                        </div>
+
+                        <div class="entry circular-image">
+                            <span class="title">Pop</span>
+                            <div class="overlay"></div>
+                            <img src="assets/img/stations/pop.jpg" alt="" class="thumbnail">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="genres flex">
+                        <div class="entry">
+                            <span class="title">Party</span>
+                            <div class="overlay"></div>
+                            <div class="bg bg-1"></div>
+                        </div>
+                        <div class="entry">
+                            <span class="title">Electronic</span>
+                            <div class="overlay"></div>
+                            <div class="bg bg-2"></div>
+                        </div>
+                        <div class="entry entry-bg-3">
+                            <span class="title">Road Trip</span>
+                            <div class="overlay"></div>
+                            <div class="bg bg-3"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Latest English</h2>
+                    <div class="album-list flex">
+                        <div class="entry">
+                            <img alt="" class="thumbnail" src="assets/img/album-art/the-slow-rush.jpg">
+                            <div class="info">
+                                The Slow Rush
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Nurture
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/parcels.jpg" alt="" class="thumbnail">
+                            <div class="info">
+                                Parcels
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/higher-power.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Higher Power
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/innerspeaker.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Innerspeaker
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/gossamer.jpg" alt="" class="thumbnail">
+                            <div class="info">
+                                Gossamer
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Latest Hindi</h2>
+                    <div class="album-list flex">
+                        <div class="entry">
+                            <img alt="" class="thumbnail" src="assets/img/album-art/the-slow-rush.jpg">
+                            <div class="info">
+                                The Slow Rush
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/nurture.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Nurture
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/parcels.jpg" alt="" class="thumbnail">
+                            <div class="info">
+                                Parcels
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/higher-power.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Higher Power
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/innerspeaker.png" alt="" class="thumbnail">
+                            <div class="info">
+                                Innerspeaker
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <img src="assets/img/album-art/gossamer.jpg" alt="" class="thumbnail">
+                            <div class="info">
+                                Gossamer
+                                <div class="subtitle date">
+                                    Jan 1, 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--Sidebar for queue/favorites-->
+        <aside class="sidebar">
+            <div class="header flex">
+                <h1>Queue</h1>
+                <div class="right">
+                    <select name="" id="">
+                        <option value="">Queue</option>
+                        <option value="">Favorites</option>
+                    </select>
+                </div>
+            </div>
+            <!--Playback queue-->
+            <div class="queue">
+                <div class="entry"><span class="track-number">01</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">02</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">03</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">04</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">05</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">06</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">07</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">08</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">09</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">10</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">11</span><img class="thumbnail glow-yellow"
+                        src="assets/img/album-art/random-access-memories.jpg"></img>
+                    <div class="info">Instant Crush
+                        <div class="subtitle">Daft Punk</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">12</span><img class="thumbnail glow-red"
+                        src="assets/img/album-art/comedown-machine.jpg"></img>
+                    <div class="info">Welcome to Japan
+                        <div class="subtitle">The Strokes</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">13</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/wolfgang-amadeus-phoenix.png"></img>
+                    <div class="info">Lisztomania
+                        <div class="subtitle">Phoenix</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">14</span><img class="thumbnail glow-green"
+                        src="assets/img/album-art/nurture.png"></img>
+                    <div class="info">Look at the Sky
+                        <div class="subtitle">Porter Robinson</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="entry"><span class="track-number">15</span><img class="thumbnail glow-pink"
+                        src="assets/img/album-art/good-luck.jpg"></img>
+                    <div class="info">Good Luck
+                        <div class="subtitle">Broken Bells</div>
+                    </div>
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--Bottom navigation bar-->
+    <footer id="bottombar">
+        <!--Currently playing song-->
+        <div id="now-playing">
+            <img src="assets/img/album-art/comedown-machine.jpg" class="thumbnail" alt="">
+            <div class="info">
+                Welcome to Japan
+                <div class="subtitle">The Strokes</div>
+            </div>
+            <div class="song-actions">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban"></i>
+            </div>
+        </div>
+        <!--Playback controls-->
+        <div id="controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i id="play-pause" class="far fa-pause-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+            <div class="seekbar-container">
+                <span class="subtitle">0:55</span>
+                <input type="range" value="25" id="playback-bar">
+                <span class="subtitle">4:44</span>
+            </div>
+        </div>
+        <div id="additional-controls">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" value="75">
+            <i class="fas fa-expand-alt" id="icon-fullscreen"></i>
+        </div>
+    </footer>
+
+</body>
+
+</html>

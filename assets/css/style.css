@@ -1,0 +1,315 @@
+/** This file contains styles that are used across the entire app **/
+
+/** Global variables for the color scheme **/
+:root {
+    --primary-text-color: #fffff;
+    --subtitle-color: #9EA0A9;
+    --accent-color: #50E3C2;
+    --secondary-background: #101642;
+}
+
+body {
+    background-color: #0C1027;
+    color: #ffffff;
+}
+
+#topbar {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10px;
+    height: 7vh;
+    min-height: 60px;
+    max-height: 90px;
+    color: #ffffff;
+    background-color: #0C1027;
+    box-shadow: 0px 10px 15px #0c1027a2;
+    z-index: 9999;
+}
+
+#topbar a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+#topbar a:hover {
+    color: var(--primary-text-color);
+}
+
+#topbar .circular-image > img {
+    height: 50px;
+}
+ 
+#search {
+    padding: 7px;
+    border-radius: 4px;
+    background-color: var(--secondary-background);
+    margin-left: auto;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#search > input {
+    box-sizing: border-box;
+    margin-left: 5px;
+    width: 90%;
+    background: none;
+    border: none
+}
+
+#topbar .applogo{
+    top: 0px;
+    margin-right: 60px;
+    height: 100%;
+    width: auto;
+    max-height: 70px;
+}
+
+#topbar .applogo-small {
+    display: none;
+    margin-right: 30px;
+    height: 65px;
+}
+
+#bottombar {
+    box-sizing: border-box;
+    width:100%;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    height: 70px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    background-color: #282828;
+    z-index: 999;
+}
+
+#now-playing {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    line-height: 1.4rem;
+}
+
+#now-playing > .thumbnail {
+    margin-right: 0.5rem;
+    height: 95%;
+    width: auto;
+}
+
+#now-playing > .song-actions {
+    align-self: baseline;
+    justify-content: right;
+    letter-spacing: 0.1rem;
+    margin-left: 0.8rem;
+}
+
+.circular-image {
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#controls {
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+#controls i {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+
+#play-pause {
+    font-size: 2rem;
+}
+
+#controls input[type="range"] {
+    width: 30vw;
+    max-width: 500px;
+}
+
+#additional-controls {
+    align-self: center;
+}
+
+#content-wrapper {
+    margin-top: 105px;
+    margin-bottom: 55px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-content {
+    display: inline-block;
+    width: 60%;
+}
+
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-left: 5%;
+}
+
+.sidebar > .header > h1 {
+    margin-top: 0px;
+}
+
+.sidebar > .header > .right {
+    text-align: right;
+    margin-left: auto;
+}
+
+.sidebar > .header select {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+}
+
+.horizontal-list {
+    list-style: none;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.queue {
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.queue > .entry {
+    display: flex;
+    height: 40px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.queue > .entry > .thumbnail {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 3px;
+}
+
+.queue > .entry > .info {
+    flex-grow: 1;
+}
+
+.queue > .entry > .track-number {
+    align-self: center;
+}
+
+.queue > .entry > .icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: #afafaf;
+}
+
+.queue > .entry > .icon:hover {
+    color: #ffffff;
+}
+
+/** Normally, the colour for each track would be auto-selected by a javascript library.
+    But in this case, the colours are hardcoded. This will be fixed in the full javascript version
+    of the project.
+**/
+.glow-yellow {
+    box-shadow: 0px 8px 20px rgba(232, 210, 95, 0.35);
+}
+
+.glow-red {
+    box-shadow: 0px 8px 20px rgba(252, 67, 54, 0.35);
+}
+
+.glow-pink {
+    box-shadow: 0px 8px 20px rgba(209, 79, 166, 0.35);
+}
+
+.glow-green {
+    box-shadow: 0px 8px 20px rgba(92, 163, 90, 0.35);
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+    font-size: 0.8rem;
+}
+
+.date {
+    text-transform: uppercase;
+}
+
+/** Overrides for responsiveness **/
+@media screen and (max-width: 1024px) {
+    /** Make the sidebar display below the page's main content **/
+    .main-content {
+        width: 100%;
+        overflow: auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin-left: 0px;
+        overflow: auto;
+    }
+    .queue {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #search {
+        background: none;
+        flex-grow: 0;
+    }
+    #search > input[type="search"] {
+        display: none;
+    }
+    #additional-controls > input[type="range"] {
+        display: none;
+    }
+    #additional-controls {
+        letter-spacing: 0.1rem;
+    }
+    #icon-fullscreen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /** Swap the main app logo with a smaller version **/
+    #topbar > .applogo {
+        display: none;
+    }
+    #topbar > .applogo-small {
+        display: inline-block;
+    }
+}
